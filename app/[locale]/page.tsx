@@ -1,35 +1,23 @@
 'use client';
 
-import Card from '../../components/ui/Card';
-import Button from '../../components/ui/Button';
-import Footer from '../../components/layout/Footer';
 import { useTranslations } from 'next-intl';
+import HeroSection from '../../components/layout/LandingPage/Hero';
+import ProjectsSection from '../../components/layout/LandingPage/Projects';
+import BlogsSection from '../../components/layout/LandingPage/Blogs';
+import CTASection from '../../components/layout/LandingPage/CallToAction';
 
 export default function HomePage() {
-  const t = useTranslations('home');
+  const tHero = useTranslations('Hero');
+  const tProjects = useTranslations('Projects');
+  const tBlogs = useTranslations('Blogs');
+  const tCTA = useTranslations('CTA');
 
   return (
-    <div className="space-y-8">
-      {/* Hero Section */}
-      <section className="text-center space-y-4">
-        <h1 className="text-4xl font-bold">{t('title')}</h1>
-        <p className="text-lg text-gray-600 dark:text-gray-300">{t('description')}</p>
-        <Button variant="primary" onClick={() => alert('Clicked!')}>
-          🚀 Get Started
-        </Button>
-      </section>
-
-      {/* Example Card */}
-      <section>
-        <Card title="Reusable Card Component">
-          <p>
-            This is an example of a <strong>Card</strong> component with light & dark mode styles.
-          </p>
-        </Card>
-      </section>
-
-      {/* Footer */}
-      <Footer />
+    <div className="relative min-h-screen w-full mt-15">
+      <HeroSection t={tHero} />
+      <ProjectsSection t={tProjects} />
+      <BlogsSection t={tBlogs} />
+      <CTASection t={tCTA} />
     </div>
   );
 }

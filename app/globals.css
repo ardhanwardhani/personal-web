@@ -19,18 +19,86 @@
   }
 }
 
-/* body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-} */
-
 /* default light */
 body {
-  @apply bg-white text-black;
+  background-color: #eff7ec;
+  font-family: 'Geist', sans-serif;
 }
 
+.hero-name,
+.title-section,
+.project-name {
+  font-family: 'Nohemi', sans-serif;
+  color: #43265e;
+}
+
+.navbar {
+  @apply fixed top-5 left-1/2 -translate-x-1/2 z-50
+         bg-white/50 backdrop-blur-md text-black
+         w-[90%] md:w-[50%] 
+         px-6 py-3 flex justify-between items-end md:items-center
+         rounded-[50px] border border-white/30 shadow-md;
+}
+
+.sidebar {
+  @apply md:hidden fixed -top-6 -right-7 h-screen w-1/2 shadow-lg transform transition-transform duration-300 z-50
+        bg-black/70 backdrop-blur-md text-white;
+}
+
+.stack-chip {
+  background-color: #d8e4cd;
+}
+
+.lang-opt,
+.close-sidebar {
+  color: white;
+}
 /* dark mode */
 .dark body {
-  @apply bg-gray-900 text-white;
+  background-color: #2c2c33;
+}
+
+.dark .navbar,
+.dark .lang-opt,
+.dark .hero-name,
+.dark .title-section,
+.dark .project-name {
+  color: #ffffff;
+}
+
+.dark .btn-detail-project {
+  background-color: #ffffff;
+}
+
+.dark .btn-detail-project:hover {
+  background-color: #59168b;
+  color: #ffffff;
+}
+
+.dark .btn-slide-card {
+  background-color: #ffffff;
+  color: #2c2c33;
+}
+
+.dark .btn-slide-card:hover {
+  background-color: #59168b;
+  color: #ffffff;
+}
+
+.dark .blog-card {
+  background-color: #f2fff3;
+}
+
+.dark .see-more {
+  color: #ffffff;
+}
+
+.dark .sidebar {
+  @apply md:hidden fixed -top-6 -right-7 h-screen w-1/2 shadow-lg transform transition-transform duration-300 z-50
+        bg-white backdrop-blur-md text-black;
+}
+
+.dark .close-sidebar,
+.dark .lang-opt {
+  color: black;
 }

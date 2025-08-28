@@ -1,6 +1,21 @@
 {
-  "home": {
-    "title": "Selamat Datang di Aplikasi Saya",
-    "description": "Ini adalah versi Bahasa Indonesia"
+  "Hero": {
+    "title": "Halo, nama saya",
+    "description": "Saya seorang Fullstack Developer dengan 2 tahun pengalaman membangun aplikasi web skala besar dan 3 tahun di industri ritel FMCG. Perpaduan keahlian teknis dan pengalaman lapangan saya memperkuat kemampuan product thinking, kerja tim, dan problem-solving.Bersemangat mengubah ide menjadi solusi digital yang berdampak, saya berkembang di lingkungan yang cepat dan kolaboratif.",
+    "downloadMyCV": "Unduh CV Saya"
+  },
+  "Projects": {
+    "seeDetail": "Lihat Detil"
+  },
+  "Blogs": {
+    "seeMore": "Lihat Selengkapnya"
+  },
+  "CTA": {
+    "title": "Mari Bekerja Sama 🚀",
+    "subtitle1": "Sedang mencari seseorang yang kreatif, dapat diandalkan, dan cepat belajar?",
+    "subtitle2": "Itu saya! Saya siap menghadirkan ide-ide segar sekaligus memberikan hasil kerja yang konsisten dan berkualitas tinggi.",
+    "connect": "Terhubung dengan saya melalui:",
+    "designedBy": "Dirancang oleh",
+    "developedBy": "Dikembangkan oleh"
   }
 }
