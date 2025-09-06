@@ -24,7 +24,7 @@ export default function LanguageSwitcher() {
   };
 
   return (
-    <select value={currentLocale} onChange={handleChange} className="lang-opt px-3 py-1 rounded text-black cursor-pointer">
+    <select value={currentLocale} onChange={handleChange} className="lang-opt px-3 py-1 rounded cursor-pointer">
       <option value="en">English</option>
       <option value="id">Indonesia</option>
     </select>

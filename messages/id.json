@@ -4,6 +4,10 @@
     "description": "Saya seorang Fullstack Developer dengan 2 tahun pengalaman membangun aplikasi web skala besar dan 3 tahun di industri ritel FMCG. Perpaduan keahlian teknis dan pengalaman lapangan saya memperkuat kemampuan product thinking, kerja tim, dan problem-solving.Bersemangat mengubah ide menjadi solusi digital yang berdampak, saya berkembang di lingkungan yang cepat dan kolaboratif.",
     "downloadMyCV": "Unduh CV Saya"
   },
+  "AboutMe": {
+    "title": "Tentang Saya",
+    "downloadMyCV": "Unduh CV Saya"
+  },
   "Projects": {
     "seeDetail": "Lihat Detil"
   },

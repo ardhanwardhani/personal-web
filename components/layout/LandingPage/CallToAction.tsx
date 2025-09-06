@@ -2,10 +2,11 @@
 
 import { BsGithub, BsLinkedin, BsTwitterX, BsInstagram } from 'react-icons/bs';
 import Image from 'next/image';
+import { motion } from 'motion/react';
 
 export default function CTASection({ t }: { t: (key: string) => string }) {
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center px-5 md:px-0">
+    <section id="contact" className="relative min-h-screen flex flex-col items-center justify-center px-5 md:px-0">
       <Image
         src="/assets/images/bottom-blob.svg"
         alt="Green Blue Blob"
@@ -13,19 +14,33 @@ export default function CTASection({ t }: { t: (key: string) => string }) {
         height={500}
         className="absolute md:-top-100 md:-left-70 -top-70 -left-30 w-[100vw] max-w-[700px] z-[-1] pointer-events-none select-none blur-2xl opacity-50"
       />
-      <h1 className="title-section text-3xl md:text-6xl font-bold text-purple-900 mb-12">{t('title')}</h1>
-      <p className="font-semibold text-xl">{t('subtitle1')}</p>
-      <p className="font-semibold text-xl">{t('subtitle2')}</p>
-      <p className="font-semibold text-lg mt-20">{t('connect')}</p>
-      <div className="h-full flex justify-end items-center mt-5">
+      <motion.h1
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.7, delay: 0.1 }}
+        viewport={{ once: false, amount: 0.3 }}
+        className="title-section text-3xl md:text-6xl font-bold text-purple-900 mb-12 mt-10"
+      >
+        {t('title')}
+      </motion.h1>
+      <motion.p initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.7, delay: 0.1 }} viewport={{ once: false, amount: 0.3 }} className="text-xl">
+        {t('subtitle1')}
+      </motion.p>
+      <motion.p initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.7, delay: 0.1 }} viewport={{ once: false, amount: 0.3 }} className="text-xl">
+        {t('subtitle2')}
+      </motion.p>
+      <motion.p initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.3 }} viewport={{ once: false, amount: 0.3 }} className="font-semibold text-lg mt-20">
+        {t('connect')}
+      </motion.p>
+      <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.3 }} viewport={{ once: false, amount: 0.3 }} className="h-full flex justify-end items-center mt-5">
         <div className="w-72 h-15 bg-white rounded-full shadow-md flex flex-row items-center justify-around">
           <BsGithub size={25} className="text-black cursor-pointer hover:text-gray-600" />
           <BsLinkedin size={25} className="text-black cursor-pointer hover:text-blue-600" />
           <BsTwitterX size={25} className="text-black cursor-pointer hover:text-gray-800" />
           <BsInstagram size={25} className="text-black cursor-pointer hover:text-pink-500" />
         </div>
-      </div>
-      <p className="text-center mt-10">
+      </motion.div>
+      <motion.p initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.3 }} viewport={{ once: false, amount: 0.3 }} className="text-center mt-10">
         {t('designedBy')}{' '}
         <a href="https://www.raharditya.com/" className="text-[#6EE984] hover:underline">
           Raharditya
@@ -35,7 +50,7 @@ export default function CTASection({ t }: { t: (key: string) => string }) {
         <a href="" className="text-[#6EE984] hover:underline">
           Wardhani
         </a>
-      </p>
+      </motion.p>
     </section>
   );
 }

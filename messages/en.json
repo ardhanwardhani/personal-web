@@ -1,7 +1,10 @@
 {
   "Hero": {
     "title": "Hi, my name is",
-    "description": "I’m a Fullstack Developer with 2 years of experience in building scalable web apps and 3 years in FMCG retail. My mix of tech expertise and frontline experience fuels strong product thinking, teamwork, and problem-solving. Passionate about turning ideas into impactful digital solutions, I thrive in fast-paced, collaborative environments.",
+    "description": "I’m a Fullstack Developer with 2 years of experience in building scalable web apps and 3 years in FMCG retail. My mix of tech expertise and frontline experience fuels strong product thinking, teamwork, and problem-solving. Passionate about turning ideas into impactful digital solutions, I thrive in fast-paced, collaborative environments."
+  },
+  "AboutMe": {
+    "title": "About Me",
     "downloadMyCV": "Download My CV"
   },
   "Projects": {
@@ -17,96 +20,5 @@
     "connect": "Let’s connect with me on:",
     "designedBy": "Designed by",
     "developedBy": "Developed by"
-  },
-  "projects": [
-    {
-      "projectName": "",
-      "imageUrl": "",
-      "tectStack": [
-        {
-          "icon": "",
-          "label": ""
-        },
-        {
-          "icon": "",
-          "label": ""
-        },
-        {
-          "icon": "",
-          "label": ""
-        },
-        {
-          "icon": "",
-          "label": ""
-        }
-      ],
-      "shortDescription": "",
-      "fullDescription": ""
-    },
-    {
-      "projectName": "",
-      "imageUrl": "",
-      "tectStack": [
-        {
-          "icon": "",
-          "label": ""
-        },
-        {
-          "icon": "",
-          "label": ""
-        },
-        {
-          "icon": "",
-          "label": ""
-        },
-        {
-          "icon": "",
-          "label": ""
-        }
-      ],
-      "shortDescription": "",
-      "fullDescription": ""
-    },
-    {
-      "projectName": "",
-      "imageUrl": "",
-      "tectStack": [
-        {
-          "icon": "",
-          "label": ""
-        },
-        {
-          "icon": "",
-          "label": ""
-        },
-        {
-          "icon": "",
-          "label": ""
-        },
-        {
-          "icon": "",
-          "label": ""
-        }
-      ],
-      "shortDescription": "",
-      "fullDescription": ""
-    }
-  ],
-  "blog-posts": [
-    {
-      "title": "",
-      "platform": "",
-      "publishDate": ""
-    },
-    {
-      "title": "",
-      "platform": "",
-      "publishDate": ""
-    },
-    {
-      "title": "",
-      "platform": "",
-      "publishDate": ""
-    }
-  ]
+  }
 }

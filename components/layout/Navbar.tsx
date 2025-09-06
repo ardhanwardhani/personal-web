@@ -11,10 +11,21 @@ export default function Navbar() {
   return (
     <nav className="navbar relative">
       <div className="hidden md:flex gap-10 items-center p-3">
-        <div className="text-lg cursor-pointer hover:text-purple-700 transition">Home</div>
-        <div className="text-lg cursor-pointer hover:text-purple-700 transition">Projects</div>
-        <div className="text-lg cursor-pointer hover:text-purple-700 transition">Blogs</div>
-        <div className="text-lg cursor-pointer hover:text-purple-700 transition">Contact</div>
+        <a href="#hero" className="text-lg cursor-pointer hover:text-purple-700 transition">
+          Home
+        </a>
+        <a href="#about-me" className="text-lg cursor-pointer hover:text-purple-700 transition">
+          About Me
+        </a>
+        <a href="#projects" className="text-lg cursor-pointer hover:text-purple-700 transition">
+          Projects
+        </a>
+        <a href="#blogs" className="text-lg cursor-pointer hover:text-purple-700 transition">
+          Blogs
+        </a>
+        <a href="#contact" className="text-lg cursor-pointer hover:text-purple-700 transition">
+          Contact
+        </a>
       </div>
 
       <div className="hidden md:flex gap-4 items-center">
@@ -39,10 +50,21 @@ export default function Navbar() {
               <X size={28} className="close-sidebar" />
             </button>
           </div>
-          <div className="cursor-pointer hover:text-purple-700 transition">Home</div>
-          <div className="cursor-pointer hover:text-purple-700 transition">Projects</div>
-          <div className="cursor-pointer hover:text-purple-700 transition">Blogs</div>
-          <div className="cursor-pointer hover:text-purple-700 transition">Contact</div>
+          <a href="#hero" className="cursor-pointer hover:text-purple-700 transition">
+            Home
+          </a>
+          <a href="#about-me" className="cursor-pointer hover:text-purple-700 transition">
+            About Me
+          </a>
+          <a href="#projects" className="cursor-pointer hover:text-purple-700 transition">
+            Projects
+          </a>
+          <a href="#blogs" className="cursor-pointer hover:text-purple-700 transition">
+            Blogs
+          </a>
+          <a href="#contact" className="cursor-pointer hover:text-purple-700 transition">
+            Contact
+          </a>
           <div className="flex flex-col justify-start items-start gap-10 pt-4">
             <LanguageSwitcher />
             <ThemeSwitcher />
