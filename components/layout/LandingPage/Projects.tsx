@@ -36,7 +36,7 @@ export default function ProjectsSection({ t }: { t: (key: string) => string }) {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.1 }}
         viewport={{ once: false, amount: 0.3 }}
-        className="title-section text-4xl md:text-6xl font-bold text-purple-900 mb-12 mt-20"
+        className="title-section text-4xl md:text-5xl font-bold text-purple-900 mb-5 mt-20"
       >
         Projects
       </motion.h1>
@@ -47,9 +47,9 @@ export default function ProjectsSection({ t }: { t: (key: string) => string }) {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, type: 'spring' }}
           viewport={{ once: false, amount: 0.2 }}
-          className="w-full h-[200px] md:h-[450px] relative mb-10"
+          className="w-full h-[200px] md:h-[450px] relative mb-10 py-5"
         >
-          <Image src={project.imageUrl} alt="Project preview" className="object-cover rounded-3xl shadow-lg" width={700} height={350} />
+          <Image src={project.imageUrl} alt={project.imgAlt} className="object-cover rounded-3xl shadow-lg" width={700} height={350} />
         </motion.div>
         <motion.div
           key={currentIndex + '-desc'}
@@ -57,7 +57,7 @@ export default function ProjectsSection({ t }: { t: (key: string) => string }) {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.5, type: 'spring' }}
           viewport={{ once: false, amount: 0.2 }}
-          className="flex flex-col h-full gap-5"
+          className="flex flex-col h-full gap-5 py-5"
         >
           <h2 className="project-name text-2xl md:text-4xl">{project.projectName}</h2>
           <div className="flex flex-wrap gap-2 sm:gap-3">
@@ -67,9 +67,9 @@ export default function ProjectsSection({ t }: { t: (key: string) => string }) {
                 <span
                   key={i}
                   className="stack-chip flex items-center gap-1.5 sm:gap-2 
-                 px-2.5 py-1.5 sm:px-4 sm:py-2 
+                 px-2 py-1 
                  rounded-full bg-white/20 backdrop-blur-lg border border-white/30 shadow-md 
-                 text-purple-900 font-medium text-xs sm:text-sm"
+                 text-purple-900 font-medium text-xs md:text-xs"
                 >
                   <Icon className="w-4 h-4" />
                   {stack.label}

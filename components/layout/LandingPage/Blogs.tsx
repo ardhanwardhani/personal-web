@@ -12,7 +12,7 @@ export default function BlogsSection({ t }: { t: (key: string) => string }) {
   const blogs = locale === 'ID' ? blogListID : blogListEN;
 
   return (
-    <section id="blogs" className="relative min-h-screen flex items-center justify-center px-5 md:px-15">
+    <section id="blogs" className="relative min-h-screen flex items-center justify-center px-5 md:px-15 pt-10">
       <div className="flex flex-col justify-center items-center">
         <Image
           src="/assets/images/blob-project-2.svg"
@@ -26,7 +26,7 @@ export default function BlogsSection({ t }: { t: (key: string) => string }) {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
           viewport={{ once: false, amount: 0.3 }}
-          className="title-section text-4xl md:text-6xl font-bold text-purple-900 md:mb-12 mb-7"
+          className="title-section text-4xl md:text-5xl font-bold text-purple-900 md:mb-10 mb-7"
         >
           Blogs
         </motion.h1>
@@ -50,7 +50,7 @@ export default function BlogsSection({ t }: { t: (key: string) => string }) {
           ))}
         </motion.div>
         <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 1 }} viewport={{ once: false, amount: 0.3 }} className="mt-8 flex flex-row justify-end items-end">
-          <a href="#" className="see-more flex items-center gap-2 text-sm font-medium text-purple-900 hover:underline">
+          <a href="https://medium.com/@ardhanwardhani" className="see-more flex items-center gap-2 text-sm font-medium text-purple-900 hover:underline">
             {t('seeMore')} <BsArrowRight className="w-4 h-4" />
           </a>
         </motion.div>

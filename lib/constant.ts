@@ -16,6 +16,7 @@ type Project = {
   slug: string;
   projectName: string;
   imageUrl: string;
+  imgAlt: string;
   techStacks: TechStack[];
   shortDescription: string;
   fullDescription: string;
@@ -32,7 +33,8 @@ export const projectListEN: Project[] = [
   {
     slug: 'talent-center',
     projectName: 'Talent Center',
-    imageUrl: '/assets/images/project.png',
+    imageUrl: '/assets/images/project.jpg',
+    imgAlt: 'Image by rawpixel.com on Freepik',
     techStacks: [
       {
         icon: SiSpring,
@@ -55,7 +57,8 @@ export const projectListEN: Project[] = [
   {
     slug: 'branch-portal',
     projectName: 'Branch Portal Bank Jatim',
-    imageUrl: '/assets/images/project.png',
+    imageUrl: '/assets/images/project.jpg',
+    imgAlt: 'Image by rawpixel.com on Freepik',
     techStacks: [
       {
         icon: SiSpring,
@@ -78,7 +81,8 @@ export const projectListEN: Project[] = [
   {
     slug: 'jobs-manager',
     projectName: 'Jobs Manager',
-    imageUrl: '/assets/images/project.png',
+    imageUrl: '/assets/images/project.jpg',
+    imgAlt: 'Image by rawpixel.com on Freepik',
     techStacks: [
       {
         icon: FaNodeJs,
@@ -113,7 +117,8 @@ export const projectListEN: Project[] = [
   {
     slug: 'ticket-management-system',
     projectName: 'Ticket Management System',
-    imageUrl: '/assets/images/project.png',
+    imageUrl: '/assets/images/project.jpg',
+    imgAlt: 'Image by rawpixel.com on Freepik',
     techStacks: [
       {
         icon: RiNextjsFill,
@@ -132,7 +137,8 @@ export const projectListEN: Project[] = [
   {
     slug: 'tiptip-web-app',
     projectName: 'TipTip Web App',
-    imageUrl: '/assets/images/project.png',
+    imageUrl: '/assets/images/project.jpg',
+    imgAlt: 'Image by rawpixel.com on Freepik',
     techStacks: [
       {
         icon: RiNextjsFill,
@@ -151,7 +157,8 @@ export const projectListEN: Project[] = [
   {
     slug: 'mangement-project-information-syste,',
     projectName: 'Information System Project Management',
-    imageUrl: '/assets/images/project.png',
+    imageUrl: '/assets/images/project.jpg',
+    imgAlt: 'Image by rawpixel.com on Freepik',
     techStacks: [
       {
         icon: FaReact,
@@ -171,7 +178,8 @@ export const projectListID: Project[] = [
   {
     slug: 'talent-center',
     projectName: 'Talent Center',
-    imageUrl: '/assets/images/project.png',
+    imageUrl: '/assets/images/project.jpg',
+    imgAlt: 'Image by rawpixel.com on Freepik',
     techStacks: [
       {
         icon: SiSpring,
@@ -194,7 +202,8 @@ export const projectListID: Project[] = [
   {
     slug: 'branch-portal',
     projectName: 'Branch Portal Bank Jatim',
-    imageUrl: '/assets/images/project.png',
+    imageUrl: '/assets/images/project.jpg',
+    imgAlt: 'Image by rawpixel.com on Freepik',
     techStacks: [
       {
         icon: SiSpring,
@@ -217,7 +226,8 @@ export const projectListID: Project[] = [
   {
     slug: 'jobs-manager',
     projectName: 'Jobs Manager',
-    imageUrl: '/assets/images/project.png',
+    imageUrl: '/assets/images/project.jpg',
+    imgAlt: 'Image by rawpixel.com on Freepik',
     techStacks: [
       {
         icon: FaNodeJs,
@@ -252,7 +262,8 @@ export const projectListID: Project[] = [
   {
     slug: 'ticket-management-system',
     projectName: 'Ticket Management System',
-    imageUrl: '/assets/images/project.png',
+    imageUrl: '/assets/images/project.jpg',
+    imgAlt: 'Image by rawpixel.com on Freepik',
     techStacks: [
       {
         icon: RiNextjsFill,
@@ -271,7 +282,8 @@ export const projectListID: Project[] = [
   {
     slug: 'tiptip-web-app',
     projectName: 'TipTip Web App',
-    imageUrl: '/assets/images/project.png',
+    imageUrl: '/assets/images/project.jpg',
+    imgAlt: 'Image by rawpixel.com on Freepik',
     techStacks: [
       {
         icon: RiNextjsFill,
@@ -290,7 +302,8 @@ export const projectListID: Project[] = [
   {
     slug: 'mangement-project-information-system',
     projectName: 'management Project Information System',
-    imageUrl: '/assets/images/project.png',
+    imageUrl: '/assets/images/project.jpg',
+    imgAlt: 'Image by rawpixel.com on Freepik',
     techStacks: [
       {
         icon: FaReact,

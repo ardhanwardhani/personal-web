@@ -19,7 +19,7 @@ export default function CTASection({ t }: { t: (key: string) => string }) {
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.7, delay: 0.1 }}
         viewport={{ once: false, amount: 0.3 }}
-        className="title-section text-3xl md:text-6xl font-bold text-purple-900 mb-12 mt-10"
+        className="title-section text-5xl md:text-5xl font-bold text-purple-900 mb-10 mt-15"
       >
         {t('title')}
       </motion.h1>
@@ -29,15 +29,23 @@ export default function CTASection({ t }: { t: (key: string) => string }) {
       <motion.p initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.7, delay: 0.1 }} viewport={{ once: false, amount: 0.3 }} className="text-xl">
         {t('subtitle2')}
       </motion.p>
-      <motion.p initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.3 }} viewport={{ once: false, amount: 0.3 }} className="font-semibold text-lg mt-20">
+      <motion.p initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.3 }} viewport={{ once: false, amount: 0.3 }} className="font-semibold text-lg mt-10">
         {t('connect')}
       </motion.p>
       <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.3 }} viewport={{ once: false, amount: 0.3 }} className="h-full flex justify-end items-center mt-5">
         <div className="w-72 h-15 bg-white rounded-full shadow-md flex flex-row items-center justify-around">
-          <BsGithub size={25} className="text-black cursor-pointer hover:text-gray-600" />
-          <BsLinkedin size={25} className="text-black cursor-pointer hover:text-blue-600" />
-          <BsTwitterX size={25} className="text-black cursor-pointer hover:text-gray-800" />
-          <BsInstagram size={25} className="text-black cursor-pointer hover:text-pink-500" />
+          <a href="https://github.com/ardhanwardhani" target="_blank" rel="noopener noreferrer">
+            <BsGithub size={25} className="text-black cursor-pointer hover:text-gray-600" />
+          </a>
+          <a href="https://www.linkedin.com/in/anugrah-wardhani/" target="_blank" rel="noopener noreferrer">
+            <BsLinkedin size={25} className="text-black cursor-pointer hover:text-blue-600" />
+          </a>
+          <a href="https://x.com/ardhnwrdhn" target="_blank" rel="noopener noreferrer">
+            <BsTwitterX size={25} className="text-black cursor-pointer hover:text-gray-800" />
+          </a>
+          <a href="https://www.instagram.com/ardhanwardhani/" target="_blank" rel="noopener noreferrer">
+            <BsInstagram size={25} className="text-black cursor-pointer hover:text-pink-500" />
+          </a>
         </div>
       </motion.div>
       <motion.p initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.3 }} viewport={{ once: false, amount: 0.3 }} className="text-center mt-10">
